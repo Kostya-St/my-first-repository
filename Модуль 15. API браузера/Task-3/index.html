@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Модуль 15. API браузера</title>
+
+    <style>
+        .input-container {
+            display: flex;
+        }
+
+        textarea {
+            max-width: 300px;
+            min-width: 300px;
+            max-height: 150px;
+            min-height: 30px;
+            width: 300px;
+            height: 30px;
+            border: 3px solid rgb(100, 80, 255);
+        }
+
+        button:hover {
+            transition: all .3s;
+            color: rgba(59, 238, 53, 0.863);
+        }
+
+        .btn-send {
+            width: 100px;
+            background-color: rgb(100, 80, 255);
+            border: none;
+        }
+
+        .btn-geo {
+            width: 90px;
+            background-color: rgb(100, 80, 255);
+            border: none;
+        }
+
+        .messages-container {
+            width: 494px;
+            height: 400px;
+            border: 3px solid rgb(100, 80, 255);
+            overflow-y: scroll;
+        }
+
+        .message {
+            width: fit-content;
+            min-width: 20px;
+            max-width: 360px;
+
+            border: 3px solid rgb(100, 80, 255);
+            border-radius: 15px;
+
+            padding: 10px;
+            margin: 3px 3px 7px 3px;
+
+            overflow-wrap: break-word;
+            text-align: left;
+            background-color: aliceblue;
+        }
+
+        .right-message {
+            inline-size: fit-content;
+            margin-left: auto;
+            border-color: rgb(100, 80, 255);
+        }
+
+        .error-message {
+            background-color: orangered;
+            border-color: black;
+            color: white;
+        }
+
+        #start-span {
+            font-size: 12px;
+            font-style: italic;
+            color: rgba(0, 0, 0, 0.3);
+            margin-left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="input-container">
+        <textarea placeholder="Введите сообщение"></textarea>
+        <button class="btn-send">Отправить</button>
+        <button class="btn-geo">Гео-локация</button>
+    </div>
+
+    <div class="messages-container">
+        <span id="start-span">Начало переписки</span>
+    </div>
+
+    <script src="JavaScript.js"></script>
+</body>
+</html>
